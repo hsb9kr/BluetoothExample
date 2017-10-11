@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CC9B3C491F8E064400AB8315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9B3C481F8E064400AB8315 /* AppDelegate.swift */; };
-		CC9B3C4B1F8E064400AB8315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9B3C4A1F8E064400AB8315 /* ViewController.swift */; };
 		CC9B3C4E1F8E064500AB8315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9B3C4C1F8E064400AB8315 /* Main.storyboard */; };
 		CC9B3C501F8E064500AB8315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9B3C4F1F8E064500AB8315 /* Assets.xcassets */; };
 		CC9B3C531F8E064500AB8315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9B3C511F8E064500AB8315 /* LaunchScreen.storyboard */; };
+		CC9B3C5B1F8E14BA00AB8315 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9B3C5A1F8E14BA00AB8315 /* ChatViewController.swift */; };
+		CC9B3C5D1F8E16DE00AB8315 /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9B3C5C1F8E16DE00AB8315 /* MPCHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC9B3C451F8E064400AB8315 /* BluetoothExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9B3C481F8E064400AB8315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC9B3C4A1F8E064400AB8315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC9B3C4D1F8E064400AB8315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC9B3C4F1F8E064500AB8315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC9B3C521F8E064500AB8315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC9B3C541F8E064500AB8315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9B3C5A1F8E14BA00AB8315 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CC9B3C5C1F8E16DE00AB8315 /* MPCHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				CC9B3C481F8E064400AB8315 /* AppDelegate.swift */,
-				CC9B3C4A1F8E064400AB8315 /* ViewController.swift */,
+				CC9B3C5A1F8E14BA00AB8315 /* ChatViewController.swift */,
+				CC9B3C5C1F8E16DE00AB8315 /* MPCHandler.swift */,
 				CC9B3C4C1F8E064400AB8315 /* Main.storyboard */,
 				CC9B3C4F1F8E064500AB8315 /* Assets.xcassets */,
 				CC9B3C511F8E064500AB8315 /* LaunchScreen.storyboard */,
@@ -136,8 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC9B3C4B1F8E064400AB8315 /* ViewController.swift in Sources */,
+				CC9B3C5B1F8E14BA00AB8315 /* ChatViewController.swift in Sources */,
 				CC9B3C491F8E064400AB8315 /* AppDelegate.swift in Sources */,
+				CC9B3C5D1F8E16DE00AB8315 /* MPCHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +281,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7C9772Q56V;
 				INFOPLIST_FILE = BluetoothExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsb9kr.BluetoothExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7C9772Q56V;
 				INFOPLIST_FILE = BluetoothExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsb9kr.BluetoothExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
